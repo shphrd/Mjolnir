@@ -1,0 +1,44 @@
+// Normalize Reset v0.0.0
+@import "normalize";
+
+// Global Foundation Settings v0.0.0
+@import "foundation";
+
+// Font Icons v0.0.0
+@import "font-awesome";
+
+// Semantic Grid Framework For Sass and Bourbon
+// @import "neat";
+
+// Project Variables
+@import "variables";
+
+
+// Your Styles
+
+h1 {
+  font-family: $helvetica;
+//  font-size: golden-ratio(14px,  1);
+}
+
+.hero {
+	 @include panel;
+	 }
+
+.container {
+	@include grid-row;
+	}
+
+nav > ul {
+  display: block;
+  margin-top: 1em;
+
+    li {
+      display: inline;
+      padding: 1em 2em;
+
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
